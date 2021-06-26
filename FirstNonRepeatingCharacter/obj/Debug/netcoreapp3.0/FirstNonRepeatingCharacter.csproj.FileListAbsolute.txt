@@ -1,0 +1,11 @@
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.exe
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.deps.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.runtimeconfig.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.runtimeconfig.dev.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\bin\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.pdb
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\obj\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.csprojAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\obj\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\obj\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.AssemblyInfo.cs
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\obj\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\FirstNonRepeatingCharacter\obj\Debug\netcoreapp3.0\FirstNonRepeatingCharacter.pdb

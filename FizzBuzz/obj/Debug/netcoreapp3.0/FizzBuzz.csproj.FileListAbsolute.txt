@@ -1,0 +1,11 @@
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.exe
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.deps.json
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.runtimeconfig.json
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.runtimeconfig.dev.json
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.dll
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\bin\Debug\netcoreapp3.0\FizzBuzz.pdb
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\obj\Debug\netcoreapp3.0\FizzBuzz.csprojAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\obj\Debug\netcoreapp3.0\FizzBuzz.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\obj\Debug\netcoreapp3.0\FizzBuzz.AssemblyInfo.cs
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\obj\Debug\netcoreapp3.0\FizzBuzz.dll
+C:\Users\Jonathan\Desktop\Personal\Programming2\C#\FizzBuzz\obj\Debug\netcoreapp3.0\FizzBuzz.pdb
