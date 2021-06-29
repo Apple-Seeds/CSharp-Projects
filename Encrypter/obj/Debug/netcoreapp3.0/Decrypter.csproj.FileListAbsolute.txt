@@ -1,0 +1,11 @@
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.exe
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.deps.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.runtimeconfig.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.runtimeconfig.dev.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\bin\Debug\netcoreapp3.0\Decrypter.pdb
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\obj\Debug\netcoreapp3.0\Decrypter.csprojAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\obj\Debug\netcoreapp3.0\Decrypter.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\obj\Debug\netcoreapp3.0\Decrypter.AssemblyInfo.cs
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\obj\Debug\netcoreapp3.0\Decrypter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Decrypter\obj\Debug\netcoreapp3.0\Decrypter.pdb

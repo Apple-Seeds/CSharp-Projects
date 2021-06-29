@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\LargestProduct\\LargestProduct.csproj",
-      "projectName": "LargestProduct",
-      "projectPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\LargestProduct\\LargestProduct.csproj",
+      "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\Decrypter.csproj",
+      "projectName": "Decrypter",
+      "projectPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\Decrypter.csproj",
       "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\LargestProduct\\obj\\",
+      "outputPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
