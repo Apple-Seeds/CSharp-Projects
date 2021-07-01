@@ -1,0 +1,11 @@
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.exe
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.deps.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.runtimeconfig.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.runtimeconfig.dev.json
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\bin\Debug\netcoreapp3.0\Encrypter.pdb
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\obj\Debug\netcoreapp3.0\Encrypter.csprojAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\obj\Debug\netcoreapp3.0\Encrypter.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\obj\Debug\netcoreapp3.0\Encrypter.AssemblyInfo.cs
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\obj\Debug\netcoreapp3.0\Encrypter.dll
+C:\Users\Jonathan\Desktop\Personal\Programming\C#\Encrypter\obj\Debug\netcoreapp3.0\Encrypter.pdb

@@ -134,28 +134,31 @@ That's really it. Just read the file, make three methods to take care of those d
 ## Pseudocode
 ### Main
 	// User Input
-	Try to do the following:
-		+Ask the user for a valid text file
-		+Store the name of the file in a string
-	If that fails, throw a FileNotFoundException
-		+Alert the user that the file wasn't found
-	Ask the user for an output name
-	Store the output name in a String 
-	Create a StreamWriter with appending equaling true
+    Ask the user for a valid text file
+    Store the name of the file in a string
+    Ask the user for the name of the output file
+    Store the requested file name in a string
+    If that file doesn't have a '.txt' on the end,
+        +Tack the filetype on the end
 
-	// Text to List
-	Create an integer list that will hold the ASCII values of each character
-	Create a string array that holds all the lines of the given file
-	For every element in the string array,
-		+For each element of the string element,
-			-Take each element of the string and add it to the character list
+	// Processing
+    Attempt to do the following:
+        // Text to List
+        +Create a list of strings to hold all the encrypted characters
+        +Read all the lines of the normal file into a string array
+        +For every line in the file,
+            -For every character in the given line,
+                *Send it to the TypeCheck function, and add the returned string to the string list
 
-	// Output
-	For every element in the string array,
-		+Write the returned value of a type check function to the file
+        // Output
+        +Write every line to a new file with the name the user requested
+        +Inform the user that the process was completed.
+    If all that fails:
+        +Inform the user of what went wrong
 	
 ### TypeCheck
-	Define a function to determine which functions to call, that accepts the character list
+	Define a function to determine which functions to call, that accepts a single character
+		Cast the character to it's integer value
 		+If the value is between 65 and 90,
 			-Return the string given by UpperCase
 		+Or, if the value is between 97 and 122,
@@ -171,45 +174,50 @@ That's really it. Just read the file, make three methods to take care of those d
 	Define a function to process the lowercase letter into a encrypted character, and it takes a value
 		+Return an underscore plus the (value minus 97)
 
-### Specialcase
+### SpecialCase
 	Define a function to process the special character into a encrypted character, and it takes a value
 		+If it's between 32 and 64,
-			-Return a plus sign plus the (value minus 32)
+			-Return a plus sign plus the letter and (value minus 32)
 		+Or, if it's between 91 and 96,
-			-Return a plus sign plus the (value minus 91)
+			-Return a plus sign plus the letter and (value minus 91)
 		+Or, if it's between 123-126,
-			-Return a plus sign plus the (value minus 123)
+			-Return a plus sign plus the letter and (value minus 123)
 		+Else,
-			-Return the character of the given integer value
+			-Return some indication that it didn't work
 
 ## C# Code
 ### Main
 	// User Input
-	try{
-		Console.Write("Enter a valid .txt file: ");
-		string decision = Console.ReadLine();
-	}
-	catch (FileNotFoundException){
-		Console.WriteLine("The file wasn't able to be found. Try again.");
-	}
-	Console.Write("Enter a name for the output .txt file: ")
-	string filename = Console.ReadLine();
-	using StreamWriter file = new(filename, append: true);
+    Console.Write("Enter a valid .txt file: ");
+    string decision = Console.ReadLine();
+    Console.Write("Enter a name for the output .txt file: ");
+    string filename = Console.ReadLine();
+    if (!filename.Contains(".txt"))
+        filename = filename + ".txt";
 
-	// Text to List
-	List<int> ASCIIList = new List<int>();
-	string[] lineArray = System.IO.File.ReadAllLines(decision);
-	for (int i = 0; i < lineArray.Length; i++)
-		for (int j = 0; j < lineArray[i].Length; j++)
-			ASCIIList.Add(lineArray[i][j]);
+    // Processing
+    try
+    {
+        // Text to List
+        List<string> cryptList = new List<string>();
+        string[] lineArray = System.IO.File.ReadAllLines(decision);
+        for (int i = 0; i < lineArray.Length; i++)
+            for (int j = 0; j < lineArray[i].Length; j++)
+                cryptList.Add(TypeCheck(lineArray[i][j]));
 
-	// Output
-	for (int i = 0; i < ASCIIList.Count; i++)
-		await file.WriteAsync(TypeCheck(ASCIIList[i]));
+        // Output
+        File.WriteAllLines(filename, cryptList);
+        Console.WriteLine("Encryption complete! File has been created.");
+    }
+    catch (FileNotFoundException e)
+    {
+        Console.WriteLine("Sorry! " + e.Message);
+    }
 	
 ### TypeCheck
-	static string TypeCheck(int value)
+	static string TypeCheck(char given)
 	{
+		int value = given;
 		if(value >= 65 && value <= 90)
 			return UpperCase(value);
 		else if (value >= 97 && value <= 122)
@@ -228,14 +236,23 @@ That's really it. Just read the file, make three methods to take care of those d
 		return "_" + (value - 97); // 97 is the ASCII value of 'a', which has the lowest numerical value the encrypted character can have 
 	}
 
-### Specialcase
+### SpecialCase
 	static string SpecialCase(int value){
 		if (value >= 32 && value <= 64)
-			return "+" + (value - 32); // 32 is the ASCII value of ' ', which has the lowest numerical value the encrypted character can have 
-		else if ()
-			-Return a plus sign plus the (value minus 91)
-		+Or, if it's between 123-126,
-			-Return a plus sign plus the (value minus 123)
-		+Else,
-			-Return the character of the given integer value
+			return "+A" + (value - 32); // 32 is the ASCII value of ' ', which has the lowest numerical value the encrypted character can have 
+		else if (value >= 91 && value <= 96)
+			return "+B" + (value - 91); // 91 is the ASCII value of '[', which has the lowest numerical value the encrypted character can have 
+		else if (value >= 123 && value <= 126)
+			return "+C" + (value - 91); // 91 is the ASCII value of '{', which has the lowest numerical value the encrypted character can have
+		else
+			return "???";
 		}
+
+## Implementation
+Implementation went okay. While the main bulk of the program wasn't anything too difficult, I did meet some decent trouble with the file reading/writing. I have another program that could handle the reading, so that wasn't terribly difficult besides having to wrap it in a try/catch block, which took me a minute to get working *(I tried just putting the file accessing into the block, but it didn't like that too much!)*. It was the rewriting that went wrong.
+
+At least, sort of. The writing to the file actually went just fine! I did realize I'd forgotten the letters for the special characters, but past that it got the encryption just right! The only issue is that it added a newline on the end of each character when it saved each line, and I couldn't quite figure out how to trim those off. There is a `Trim()` function, but that only works for specific strnigs, and all my attempts to just add one line at a time to the file were in vain. Maybe one day I'll figure it out, but for the time being despite all my documenation searching and atempts I couldn't get it to cooperate. Thankfully, I think the decrypter should be just fine if I build it right.
+
+
+## Testing
+From the old assignment, I have two .txt files in a `data` folder that have unencrypted text. While I don't have an encrypted version, I was able to pull up those given text files and the outputted one, and I went through and compared the output with the character sheet above, and there wasn't any issue! So I think for the most part it works just fine. Minus the aforementioned issues, which I suppose I can come back to if I ever figure them out.

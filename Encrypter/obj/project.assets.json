@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\Decrypter.csproj",
-      "projectName": "Decrypter",
-      "projectPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\Decrypter.csproj",
+      "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Encrypter\\Encrypter.csproj",
+      "projectName": "Encrypter",
+      "projectPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Encrypter\\Encrypter.csproj",
       "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Decrypter\\obj\\",
+      "outputPath": "C:\\Users\\Jonathan\\Desktop\\Personal\\Programming\\C#\\Encrypter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
